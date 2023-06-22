@@ -1,0 +1,246 @@
+.auth{
+    background-image: linear-gradient(to bottom right, var(--primaryColour), var(--secondaryColour));
+    width: 90%;
+    height: 70%;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.title{
+    background-image: linear-gradient(to bottom right, var(--primaryColour), var(--secondaryColour));
+    position: absolute;
+    top: 1vh;
+    color: var(--tertiaryColour);
+    padding: 1em;
+    border-radius: 2em;
+    font-size: 3vh;
+    font-weight: 800;
+
+}
+
+.login{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5em;
+}
+
+.loginTitle{
+    align-self: flex-start;
+    color: var(--tertiaryColour);
+}
+
+.loginInputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--tertiaryColour);
+    gap: 0.3em;
+}
+
+.loginInputs input{
+    outline: none;
+    border: none;
+    border-radius: 2em;
+    padding: 0.3em;
+    width: 90%;
+}
+
+.loginInputs button{
+    color: var(--tertiaryColour);
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    border: none;
+    border: 3px solid var(--tertiaryColour);
+    width: 5em;
+    height: 2em;
+    border-radius: 2em;
+    font-size: 1em;
+    transition: all 300ms ease-in-out;
+}
+
+.loginInputs button:hover{
+    color: var(--primaryColour);
+    background-color: var(--tertiaryColour);
+}
+
+.or{
+    border-bottom: solid 1px var(--tertiaryColour);
+    margin: 0.5em 0em 0.5em 0em;
+    width: 100%;
+}
+
+.login{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginBtn{
+    background-color: var(--tertiaryColour);
+    color: var(--primaryColour);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: center;
+    border-radius: 2em;
+    margin: 0.5em;
+    padding: 0.2em 1em 0.2em 1em;
+    transition: all 50ms linear;
+    cursor: pointer;
+}
+
+.loginTitle{
+    align-self: flex-start;
+    color: var(--tertiaryColour);
+}
+
+.signupInputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--tertiaryColour);
+    gap: 0.3em;
+    cursor: pointer;
+}
+
+.signupInputs input{
+    outline: none;
+    border: none;
+    border-radius: 2em;
+    padding: 0.3em;
+    width: 100%;
+}
+
+.signupInputs button{
+    color: var(--tertiaryColour);
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    border: none;
+    border: 3px solid var(--tertiaryColour);
+    width: 5em;
+    height: 2em;
+    border-radius: 2em;
+    font-size: 1em;
+    transition: all 300ms ease-in-out;
+}
+
+.signupInputs button:hover{
+    color: var(--primaryColour);
+    background-color: var(--tertiaryColour);
+}
+
+.signup{
+    background-color: var(--tertiaryColour);
+    color: var(--primaryColour);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: center;
+    border-radius: 2em;
+    padding: 0.1em 1em 0.1em 1em;
+    transition: all 50ms linear;
+    cursor: pointer;
+}
+
+.signup:hover{
+    border: 2px solid var(--tertiaryColour);
+}
+
+.googleLogin{
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    color: var(--tertiaryColour);
+    font-weight: 600;
+    padding: 0.3em;
+    transition: all 50ms linear;
+    cursor: pointer;
+}
+
+.googleLogin:hover{
+    border: 3px solid var(--tertiaryColour);
+}
+
+.googleLogin div{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.googleLogin div svg{
+     margin-left: 0.2em;
+}
+
+
+
+.authImage{
+    width: 60%;
+    height: 90%;
+}
+
+.authImage img{
+    object-fit: cover;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@media (max-width: 1023px){
+    .auth{
+        background-image: url(./img/authImage.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+
+    .login{
+        
+        height: auto;
+        padding: 0em 0.3em 0em 0.3em;
+        border-radius: 2em;
+        width: 50%;
+        padding: 1em;
+        
+    }
+
+    .authImage{
+        display: none;
+    }
+
+    .signup{
+        font-size: 1em;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+    }
+
+    label{
+        background-color: var(--primaryColour);
+        border-radius: 2em;
+        padding: 0.2em 0.5em 0.4em 0.5em;
+        border: 3px solid var(--tertiaryColour);
+    }
+
+    .signupInputs input{
+        border: 3px solid var(--tertiaryColour);
+    }
+    
+    .loginInputs input{
+        border: 3px solid var(--tertiaryColour);
+    }
+
+    .loginInputs button{
+        background-color: var(--primaryColour);
+    }
+
+    .signupInputs button{
+        background-color: var(--primaryColour);
+    }
+}
+

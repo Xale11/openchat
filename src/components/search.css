@@ -1,0 +1,25 @@
+.dropdown{
+    background-color: var(--tertiaryColour);
+    padding: 1em;
+    border-radius: 1em;
+    top: 20%;
+    position: absolute;
+    height: 60%;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    border: solid 1px var(--secondaryColour);
+    align-items: center;
+    z-index: 100;
+}
+
+.ccList{
+    background-color: var(--primaryColour);
+    height: 3em;
+    width: 95%;
+    border-radius: 2em;
+    padding: 0.5em 0em;
+    display: flex;
+    justify-content: space-around;
+}

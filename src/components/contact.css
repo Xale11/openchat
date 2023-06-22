@@ -1,0 +1,98 @@
+.contactCard{
+    width: 95%;
+    min-height: 10%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 0.1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid var(--tertiaryColour);
+    overflow: hidden;
+    transition: all 300ms linear;
+}
+
+.contactCard:hover{
+    background-color: var(--primaryColour);
+    border-radius: 2em;
+}
+
+.contactCard:hover .contactName{
+    color: var(--secondaryColour);
+}
+
+.contactCard:hover .messageDets{
+    background-color: var(--primaryColour);
+}
+
+.contactImg{
+    color: var(--tertiaryColour);
+    align-self: center;
+}
+
+.contactImg svg{
+    font-size: 3em;
+}
+
+.contactDets{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contactName{
+    font-weight: 800;
+    color: var(--primaryColour);
+    transition: all 300ms linear;
+}
+
+.contactMessage{
+    font-weight: 500;
+    color: var(--tertiaryColour);
+    text-align: left;
+    height:1.5em;
+    overflow: hidden;
+}
+
+.messageDets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0.3em;
+    margin-left: 0.1em;
+    background-color: var(--secondaryColour);
+    transition: all 300ms linear;
+}
+
+
+
+.timestamp{
+    font-size: 0.8em;
+    color: var(--primaryColour)
+}
+
+.msgCount{
+    color: var(--tertiaryColour);
+    background-color: var(--primaryColour);
+    border-radius: 50%;
+    font-size: 1em;
+    width: 1em;
+    height: 1em;
+    padding: 0.2em 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+@media (max-height: 500px){
+    .contactCard{
+        max-height: 50%;
+        padding: 1em 0em;
+    }
+    
+}
